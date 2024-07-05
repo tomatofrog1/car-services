@@ -19,3 +19,12 @@ $colors: (
         }
     }
 }
+
+.links{
+    color: $clr-red;
+    font-size: 0.9rem;
+                
+    &:hover{
+    color: $clr-dark;
+    }
+}

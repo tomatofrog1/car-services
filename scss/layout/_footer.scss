@@ -1,0 +1,53 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.footer{
+    margin-bottom: 2rem;
+    &__wrapper{
+        @include grid(2,1);
+        iframe{
+            width: 45rem;
+            height: 18rem;
+        }
+    }
+    &__left{
+        display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding-top: 1rem;
+    p,a{
+        color: #818181;
+    }
+    }
+    &__socials{
+        display: flex;
+        flex-direction: column;
+        &--text{
+            display: flex;
+            margin-bottom: 2rem;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            a{
+                border: solid $clr-light 2px;
+                padding: 0.8rem;
+                border-radius: 50%;
+                color: $clr-light;
+                &:hover{
+                    background-color: $clr-red;
+                    transition: 0.5s ease;
+                }
+            }
+        }
+    }
+    &__deets{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+.fa-brands .fa-facebook-f{
+    width: 1rem;
+}

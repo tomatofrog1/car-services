@@ -3,11 +3,20 @@
 
 // BANNER SLIDER
 .homeBanner{
-    height: 30vh;
+    margin-bottom: 2rem;
+    &__items{
+        img{
+            width: 50rem;
+        }
+        h1{
+            font-size: 3rem;
+        }
+    }
 }
 
 // befser
 .beforeService{
+    margin-bottom: 2rem;
     &__wrapper{
         margin: 1rem 0;
         @include grid(4,1);
@@ -42,6 +51,7 @@
 
 // service slider
 .services{
+    margin-bottom: 2rem;
     &__wrapper{
         height: 30vh;
     }
@@ -49,21 +59,61 @@
 
 // q n a
 .qna{
+    margin-bottom: 2rem;
     &__wrapper{
         @include grid(2,1);
-        padding: 6rem 5rem;
+        padding: 6rem 7rem;
         gap: 3rem;
         p,h2{
-            color: $clr-dark;
+            color: $clr-lightGrey
+        }
+        .pRed{
+            color: $clr-red;
+            padding: 1rem 0;
+            border-top: 1px solid $clr-line;
+            font-size: 0.9rem;
         }
         h2{
             font-size: 2rem;
             font-weight: normal;
-            border-bottom: 1px solid $clr-gray;
+            padding-bottom: 0.7rem;
+            border-bottom: 1px solid $clr-line;
+        }
+        p{
+            border-top: 1px solid $clr-line;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+            font-size: 1.1rem;
         }
     }
     &__what{
         display: flex;
         flex-direction: column;
+    }
+}
+
+// cta
+.cta{
+    margin-bottom: 2rem;
+    &__wrapper{
+        padding: 7rem;
+        h1{
+            font-size: 8rem;
+            font-weight: 500;
+            line-height: 7.5rem;
+            margin-bottom: 2rem;
+        }
+        a{
+            font-size: 1.3rem;
+            margin-right: 1rem;
+            font-weight: 300;
+        }
+        i{
+            font-size: 2rem;
+        }
+        &__bot{
+            display: flex;
+            align-items: center;
+        }
     }
 }

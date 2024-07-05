@@ -1,0 +1,46 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.servicePage{
+    margin-bottom: 2rem;
+    &__wrapper{
+        height: 70vh;
+    }
+}
+
+.price{
+    margin-bottom: 2rem;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 6rem;
+        gap: 2rem;
+        h2{
+            font-size: 2.5rem;
+            font-weight: normal;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid $clr-line;
+            margin-bottom: 2rem;
+            color: $clr-lightGrey;
+        }
+        p{
+            color: $clr-lightGrey;
+                font-size: 1.1rem;
+        }
+    }
+    &__report{
+        p{
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid $clr-line;
+        }
+    }
+    &__list{
+        p{
+            margin-bottom: 1rem;
+        }
+        &--list{
+            @include grid(3,1)
+        }
+    }
+}

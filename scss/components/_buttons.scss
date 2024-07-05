@@ -8,6 +8,10 @@
         @extend .btn;
         background-color: $clr-red;
         color: $clr-light;
+        &:hover{
+            background-color: $clr-light;
+            color: $clr-dark;
+        }
     }
 }
 
