@@ -23,6 +23,10 @@
                 text-underline-offset: 5.1rem;
                 transition: 0.5s ease;
             }
+            #active{
+                text-decoration: underline $clr-red 0.5rem;
+                text-underline-offset: 5.1rem;
+            }
             a{
                 color: $clr-light;
             }

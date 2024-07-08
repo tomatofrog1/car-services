@@ -1,0 +1,40 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.privacyPolicy{
+    margin-bottom: 2rem;
+    &__wrapper{
+        padding: 6rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        background-color: $clr-light;
+        gap: 2rem;
+        h2{
+            font-size: 2.5rem;
+            font-weight: normal;
+            margin-bottom: 3rem;
+            color: $clr-lightGrey;
+        }
+        p{
+            color: $clr-lightGrey;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        a{
+            color: $clr-red;
+            margin-bottom: 1rem;
+            &:hover{
+               color:$clr-dark ; 
+            }
+        }
+        a:last-of-type{
+            color: $clr-dark;
+            font-size: 1.1rem;
+        }
+    }
+    &__privacy{
+        p{
+            margin-top: 1rem;
+        }
+    }
+}

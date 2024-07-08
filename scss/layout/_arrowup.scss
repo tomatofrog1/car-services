@@ -1,0 +1,27 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.navUp{
+    opacity: 0;
+    position: fixed;
+    left: 106rem;
+    top: 54rem;
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid $clr-light;
+    border-radius: 50%;
+    font-size: 1rem;
+    color: $clr-light;
+    @include centerAll;
+    &:hover{
+        background-color: $clr-red;
+        transition: 0.3s;
+    }
+    &::before{
+        margin-top: 3px;
+    }
+}
+
+.navUp.open{
+    opacity: 100;
+}

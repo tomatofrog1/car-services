@@ -48,8 +48,13 @@
             input{
                 border: 1px solid $clr-line;
                 padding:0.7rem 1rem ;
+                color: $clr-lightGrey;
                 &:focus{
-                    color: $clr-lightGrey;
+                    color: #dadada;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    &::placeholder{
+                        color: #afafaf;
+                    }
                 }
             }
             textarea{
@@ -57,6 +62,13 @@
                 height: 15rem;
                 padding:0.7rem 1rem ;
                 resize: none;
+                color: $clr-lightGrey;
+                &:focus{
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    &::placeholder{
+                        color: #afafaf;
+                    }
+                }
             }
             
         }

@@ -19,13 +19,13 @@
   </head>
   <body class="bg--dark">
     <!-- HEADER -->
-    <header class="header bg--dark">
+    <header class="header bg--dark" id="head">
       <div class="container">
         <div class="header__wrapper">
           <img src="./aboutImgs/homeIMgs/logo.png" alt="" />
           <nav>
             <ul class="header__nav">
-              <li><a href="./home.html">HOME</a></li>
+              <li><a href="./home.html" id="active">HOME</a></li>
               <li><a href="./about.html">ABOUT</a></li>
               <li><a href="./services.html">SERVICES</a></li>
               <li><a href="./blog.html">BLOG</a></li>
@@ -35,6 +35,9 @@
         </div>
       </div>
     </header>
+
+    <!-- CHEVRON UP -->
+    <a href="#head" class="navUp"><i class="fa-solid fa-chevron-up"></i></a>
 
     <!-- HOME BANNER -->
     <section class="homeBanner  mb--2">
@@ -67,6 +70,8 @@
       <div class="container">
         <div class="beforeService__wrapper bg--gray">
           <div class="beforeService__card">
+            <div class="beforeService__card--darkback">
+            </div>
             <h3>COMPLETE SERVICES</h3>
             <span></span>
             <i class="fa-solid fa-gears"></i>
@@ -78,6 +83,8 @@
           </div>
 
           <div class="beforeService__card">
+            <div class="beforeService__card--darkback">
+            </div>
             <h3>OIL CHANGE</h3>
             <span></span>
             <i class="fa-solid fa-droplet"></i>
@@ -89,6 +96,8 @@
           </div>
 
           <div class="beforeService__card">
+            <div class="beforeService__card--darkback">
+            </div>
             <h3>ENGINE REPAIR</h3>
             <span></span>
             <i class="fa-solid fa-filter"></i>
@@ -100,6 +109,8 @@
           </div>
 
           <div class="beforeService__card">
+            <div class="beforeService__card--darkback">
+            </div>
             <h3>SCHEDULES MAINTENANCE</h3>
             <span></span>
             <i class="fa-solid fa-wrench"></i>
@@ -110,13 +121,62 @@
             <a class="btn bg--red">MORE</a>
           </div>
         </div>
+        
       </div>
     </section>
 
     <!-- SERVICES -->
     <section class="services">
       <div class="container">
-        <div class="services__wrapper bg--red"></div>
+        <div class="services__wrapper bg--red">
+          <div class="services__title">
+            <h2>SERVICES</h2>
+            <div id="service__controls">
+              <i class="fa-solid fa-arrow-left prev"></i>
+              <i class="fa-solid fa-arrow-right next"></i>
+            </div>
+          </div>
+          <div class="services__slider">
+            <div class="services__items">
+              <img src="./aboutImgs/homeIMgs/page1_pic1.jpg" alt="">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ullam! Rem repudiandae autem reiciendis sint.
+              </p>
+            </div>
+            <div class="services__items">
+              <img src="./aboutImgs/homeIMgs/page1_pic2.jpg" alt="">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ullam! Rem repudiandae autem reiciendis sint.
+              </p>
+            </div>
+            <div class="services__items">
+              <img src="./aboutImgs/homeIMgs/page1_pic3.jpg" alt="">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ullam! Rem repudiandae autem reiciendis sint.
+              </p>
+            </div>
+            <div class="services__items">
+              <img src="./aboutImgs/homeIMgs/page1_pic1.jpg" alt="">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ullam! Rem repudiandae autem reiciendis sint.
+              </p>
+            </div>
+            <div class="services__items">
+              <img src="./aboutImgs/homeIMgs/page1_pic2.jpg" alt="">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ullam! Rem repudiandae autem reiciendis sint.
+              </p>
+            </div>
+            <div class="services__items">
+              <img src="./aboutImgs/homeIMgs/page1_pic3.jpg" alt="">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ullam! Rem repudiandae autem reiciendis sint.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
       </div>
     </section>
 
@@ -186,7 +246,7 @@
             <div class="footer__socials">
               <div class="footer__socials--text">
                 <p>Car service © 2024 •</p>
-                <a>Privacy Policy</a>
+                <a href="./privacyPorlicy.html">Privacy Policy</a>
               </div>
               <ul>
                 <li>
@@ -231,5 +291,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/chevron.js"></script>
   </body>
 </html>

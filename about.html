@@ -17,16 +17,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
   </head>
+
   <body class="bg--dark">
     <!-- HEADER -->
-    <header class="header bg--dark">
+    <header class="header bg--dark" id="head">
       <div class="container">
         <div class="header__wrapper">
           <img src="./aboutImgs/homeIMgs/logo.png" alt="" />
           <nav>
             <ul class="header__nav">
               <li><a href="./home.html">HOME</a></li>
-              <li><a href="./about.html">ABOUT</a></li>
+              <li><a href="./about.html" id="active">ABOUT</a></li>
               <li><a href="./services.html">SERVICES</a></li>
               <li><a href="./blog.html">BLOG</a></li>
               <li><a href="./contact.html">CONTACTS</a></li>
@@ -36,7 +37,8 @@
       </div>
     </header>
 
-
+<!-- CHEVRON UP -->
+    <a href="#head" class="navUp"><i class="fa-solid fa-chevron-up"></i></a>
     <!-- FEATURES -->
     <section class="aboutFeatures">
       <div class="container">
@@ -174,7 +176,7 @@
             <div class="footer__socials">
               <div class="footer__socials--text">
                 <p>Car service © 2024 •</p>
-                <a>Privacy Policy</a>
+                <a href="./privacyPorlicy.html">Privacy Policy</a>
               </div>
               <ul>
                 <li>
@@ -219,5 +221,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/chevron.js"></script>
   </body>
 </html>

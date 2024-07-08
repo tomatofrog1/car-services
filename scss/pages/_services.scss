@@ -4,8 +4,58 @@
 .servicePage{
     margin-bottom: 2rem;
     &__wrapper{
-        height: 70vh;
+        padding: 6rem;
+        
     }
+    &__title{
+        padding-bottom: 0.7rem;
+        border-bottom: 1px solid $clr-line;
+        margin-bottom: 1rem;
+        @include between;
+        h2{
+            font-size: 2rem;
+            font-weight: normal;
+            
+        }
+        i{
+            border-radius: 50%;
+            background-color: $clr-light;
+            color: $clr-dark;
+            width: 2rem;
+            height: 2rem;
+            @include centerAll;
+            &:hover{
+                background-color: $clr-dark;
+                color: $clr-light
+            }
+
+        }
+        #servicePage__controls{
+            display: flex;
+            gap: 0.5rem;
+        }
+    }
+    &__items{
+        img{
+            width: 26rem;
+        }
+        a{
+            color: $clr-red;
+            &:hover{
+                color: $clr-dark;
+                transition: 0.3s;
+            }
+        }
+        a:last-child{
+            color: $clr-light;
+            text-decoration: underline;
+            &:hover{
+                color: $clr-red;
+                transition: 0.3s;
+            }
+        }
+    }
+    
 }
 
 .price{
@@ -40,7 +90,23 @@
             margin-bottom: 1rem;
         }
         &--list{
-            @include grid(3,1)
+            @include grid(3,1);
+            a{
+                @include between;
+                width: 14rem;
+                color: $clr-lightGrey;
+                &:hover{
+                    color: $clr-red;
+                    span{
+                        color: $clr-lightGrey;
+                    }
+                }
+            }
+            span{
+                display: inline-block;
+                width: 5rem;
+                overflow: hidden;
+            }
         }
     }
 }
